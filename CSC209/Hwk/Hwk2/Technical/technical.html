@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--Resource used to learn how to properly format a call to a function when setting it to a new onclick attribute value:
+    - before I had been calling my function in the format hide() when it should have been hide. This wasn't working because
+    instead of calling the function on the onlclick it was saving the return value to the onlick attribute,
+    https://stackoverflow.com/questions/5303899/change-onclick-action-with-a-javascript-function-->
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style-option" rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="outer-page">
+        <nav>
+        <!-- List of links-->
+        <ul>
+            <li><a href="https://students.tufts.edu/group/26/content/1066">Program</a></li>
+            <li>Spring 2025</li>
+            <li>Fernanda Altamirano</a></li>
+        </ul>
+        <hr>
+        <ul>
+            <li><a href="https://www.google.com/">Morocco</a></li>
+            <li><a href="fake1.html">Italy</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Spain">Spain</a></li>
+            <li><a href="fake2.html">France</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Portugal">Portugal</a></li>
+        </ul>
+        <hr>
+        <ul>
+            <li><a href="https://www.google.com/travel/flights">Ryanair</a></li>
+            <li><a href="fake3.html">Trenitalia</a></li>
+        </ul>
+        <hr>
+        </nav>
+        
+
+        <div class="rightSide">
+            <header>
+                <!-- Image, Title-->
+                <img width="700px" height="300px" src="images/pexels-pixabay-46148.jpg" alt="Plane flying in sky with clouds as background.">
+                <h1>Study Abroad Travel</h1>
+                <button type="button" onclick="changeStyle()">Toggle</button>
+                <script>
+                    function changeStyle(){
+                        if (document.getElementById("style-option").getAttribute('href') == "style1.css"){
+                            document.getElementById("style-option").href = "style2.css"
+                        }
+                        else{
+                            document.getElementById("style-option").href = "style1.css"
+                        }
+                    }
+                    //Below I debugged to figure out why the .href was not updating
+                    //document.write(document.getElementById("style-option").href);
+                    //document.write(document.getElementById("style-option").getAttribute('href'));
+                </script>
+            </header>
+
+            <section>
+                <!-- Toggle Button, Read Button, Table-->
+                <h2>Places</h2>
+                <button id="read" type="button" onclick="secretText()">Read Me</button>
+                <p id="secret"></p>
+                <script>
+                    function hide(){
+                        document.getElementById("secret").innerText = "";
+                        document.getElementById("hidden").innerText = "Read Me";
+                        document.getElementById("hidden").onclick = secretText;
+                        document.getElementById("hidden").id = "read";
+                    }
+                    function secretText(){
+                        document.getElementById("secret").innerText = "You found the secret message!"
+                        document.getElementById("read").innerText = "Hide Me";
+                        document.getElementById("read").onclick = hide;
+                        document.getElementById("read").id = "hidden"
+                    }
+                    
+                </script>
+                <table>
+                    <tr>
+                        <th>Personal Ranking (1-5)</th>
+                        <th>City</th>
+                        <th>Country</th>
+                        <th>Attractions</th>
+                        <th>Population</th> 
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><a href="fake3.html">Madrid</a></td>
+                        <td>Spain</td>
+                        <td><pre>Park El Retiro, Royal Palace, Botanical Garden</pre></td>
+                        <td><a href="fake4.html">6.8M</a></td>
+                    </tr>
+                    <tr>
+                        <td>4.5</td>
+                        <td><a href="fake2.html">Florence</a></td>
+                        <td>Italy</td>
+                        <td><pre>Cathedral of Santa Maria, <a href="fake1.html">Ponte Vecchio</a>, Piazzale Michelangelo</pre></td>
+                        <td>713.6K</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="fake2.html">Porto</a></td>
+                        <td>Portugal</td>
+                        <td><pre>Place1, Place2, Place3</pre></td>
+                        <td>number</td>
+                    </tr>
+                </table>
+            </section>
+        </div>  
+    </div>  
+</body>
+</html>
