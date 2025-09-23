@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style-option" rel="stylesheet" href="CSS/style1.css">
+</head>
+<body>
+    <div class="outer-page">
+        <nav>
+            <button type="button" onclick="moveNav()">Move Me!</button>
+            <!-- List of links-->
+            <ul>
+                <li><a href="https://students.tufts.edu/group/26/content/1066" target="_blank">Program</a></li>
+                <li>Spring 2025</li>
+                <li>Fernanda Altamirano</a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li><a href="https://www.google.com/" target="_blank">Morocco</a></li>
+                <li><a href="HTML/fake1.html" target="_blank">Italy</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Spain" target="_blank">Spain</a></li>
+                <li><a href="HTML/fake2.html" target="_blank">France</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Portugal" target="_blank">Portugal</a></li>
+            </ul>
+            <hr>
+            <ul>
+                <li><a href="https://www.google.com/travel/flights" target="_blank">Ryanair</a></li>
+                <li><a href="HTML/fake3.html" target="_blank">Trenitalia</a></li>
+            </ul>
+            <hr>
+        </nav>
+        
+
+        <div class="rightSide">
+            <header>
+                <!-- Image, Title-->
+                <img width="700px" height="300px" src="images/pexels-pixabay-46148.jpg" alt="Plane flying in sky with clouds as background.">
+                <h1>Study Abroad Travel</h1>
+
+                <button type="button" onclick="showDate()">Today's date is:</button>
+                <p id="date"></p>
+
+                <button type="button" onclick="showCredits()">Show/Hide Credits</button>
+                <ul id="creditList">
+                        <li><a href="https://www.w3schools.com/html/html_scripts.asp" target="_blank">JavaScript</a></li>
+                        <li><a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">Flexbox</a></li>
+                        <li><a href="https://www.w3schools.com/css/css_website_layout.asp" target="_blank">Website Layout Tutorial</a></li>
+                </ul>
+                <button type="button" onclick="changeStyle()">Toggle</button>
+            </header>
+
+            <section>
+                <!-- Toggle Button, Read Button, Table-->
+                <h2>Places</h2>
+                <button type="button" onclick="hideSchedule()">Hide/Show Schedule</button>
+
+                <button id="read" type="button" onclick="secretText()">Read Me</button>
+                <p id="secret"></p>
+                <table id="sched">
+                    <tr>
+                        <th>Personal Ranking (1-5)</th>
+                        <th>City</th>
+                        <th>Country</th>
+                        <th>Attractions</th>
+                        <th>Population</th>
+                        <th><button type="button" onclick="showRows('sched')">Show/Hide</button></th> 
+                    </tr>
+                    <tr id="row1">
+                        <td>5</td>
+                        <td><a href="HTML/fake3.html" target="_blank">Madrid</a></td>
+                        <td>Spain</td>
+                        <td><pre>Park El Retiro, Royal Palace, Botanical Garden</pre></td>
+                        <td><a href="HTML/fake4.html" target="_blank">6.8M</a></td>
+                        <td><button type="button" onclick="hideRow('row1')">Hide</button></td>
+                    </tr>
+                    <tr id="row2">
+                        <td>4.5</td>
+                        <td><a href="HTML/fake2.html" target="_blank">Florence</a></td>
+                        <td>Italy</td>
+                        <td><pre>Cathedral of Santa Maria, <a href="HTML/fake1.html" target="_blank">Ponte Vecchio</a>, Piazzale Michelangelo</pre></td>
+                        <td>713.6K</td>
+                        <td><button type="button" onclick="hideRow('row2')">Hide</button></td>  
+                    </tr>
+                    <tr id="row3">
+                        <td>3</td>
+                        <td><a href="HTML/fake2.html" target="_blank">Porto</a></td>
+                        <td>Portugal</td>
+                        <td><pre>Place1, Place2, Place3</pre></td>
+                        <td>number</td>
+                        <td><button type="button" onclick="hideRow('row3')">Hide</button></td>
+                    </tr>
+                </table>
+            </section>
+        </div>  
+    </div>  
+<script src="JS/interact.js"></script>
+</body>
+</html>

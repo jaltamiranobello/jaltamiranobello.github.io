@@ -1,0 +1,77 @@
+/* Resource used to style navigation bar: https://www.w3schools.com/css/css_navbar_horizontal.asp */
+body{
+    background-color: rgb(157, 157, 216);
+    margin:0px;
+}
+
+.header{
+    text-align: center;
+    color:white;
+    padding: 10px;
+}
+.menu{
+    background-color: #6f4aa2;
+}
+
+#menuLinks {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display:flex;
+  flex-direction: row;
+}
+
+.menuItem a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menuItem a:hover {
+  background-color: rgb(157, 157, 216);
+}
+
+.row{
+    display:flex;
+    flex-direction: row;
+    color:white;
+}
+
+.left{
+    flex: 20%;
+    background-color:  rgb(127, 102, 147);
+    text-align: center;
+}
+
+.right{
+    flex: 80%;
+    background-color:#301557;
+    padding: 15px;
+}
+
+pre{
+    font-family: 'Times New Roman';
+    line-height: 2;
+}
+
+#photo2{
+    display:none;
+    margin-left:70px;
+}
+
+#ratings{
+    list-style-type: none;
+    display: none;
+    background-color: #6f4aa2;
+    line-height:2;
+}
+
+#line1{
+    display: none;
+}
+
+#line2{
+    display: none;
+}
