@@ -1,0 +1,7 @@
+#myContainer {
+width: 600px;
+height: 600px;
+position: relative;
+background-image: url('../images/dimitri-iakymuk-mCR10j_B6sM-unsplash.jpg');
+background-size: 100%  100%;
+}

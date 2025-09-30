@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/level2.css">
+</head>
+<body>
+    <script>
+        // [top position, left position, direction, color, width/height]
+        // Options for direction: up, left, down, right, diagonalUpRight, diagonalUpLeft, diagonalDownLeft, diagonalDownRight
+        const SQUARES = [
+            ["0", "0", 'diagonalDownRight', '#76ADDE', "75"],
+            ["0", "525", 'diagonalDownLeft', '#C3EBC7', "75"],
+            ["525", "0", 'diagonalUpRight', '#FFFFAD', "75"],
+            ["525", "525", 'diagonalUpLeft', '#A18DB5', "75"],
+            ["225", "262", 'up', '#76ADDE', "75"],
+            ["300", "262", 'down', '#A18DB5', "75"],
+            ["262", "187", 'left', '#FFFFAD', "75"],
+            ["262", "337", 'right', '#C3EBC7', "75"]
+            ];
+    </script>
+
+    <div id="myContainer">
+    </div>
+
+    <script src="../js/level2.js"></script>
+</body>
+</html>

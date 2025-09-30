@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h1>Interactive Webpage to Add Content</h1>
+  <p>Select a color for the background:
+  <input type="color" id="backgroundColorChoice" value="#FFFFFF"></p>
+  <input type="submit" onclick="changeBackground()">
+  
+  <p>Type text to add a header: <input type="text" id="chosenHeader"></p>
+  <p>NOTE: required to select options below to create headers</p>
+  <!-- <input type="submit" onclick="changeHeader()"> -->
+    <p>Select a text option:</p>
+    <input type="radio" id="color1" name="colorChoice" value="yellow">
+    <label for="color1">Yellow</label><br>
+    <input type="radio" id="color2" name="colorChoice" value="black">
+    <label for="color2">Black</label><br>
+    <input type="radio" id="color3" name="colorChoice" value="white">
+    <label for="color3">White</label>
+    <br>  
+
+    <p>Select a line bordering option:</p>
+    <input type="radio" id="font11" name="fontChoice" value="cursive">
+    <label for="font1">Cursive</label><br>
+    <input type="radio" id="font3" name="fontChoice" value="times new roman">
+    <label for="font2">Times New Roman</label><br>
+    <input type="radio" id="font3" name="fontChoice" value="arial">
+    <label for="font3">Arial</label><br><br>
+    <input type="submit" onclick="addHeaderRadio()">
+
+
+<script src="js/tutorial2.js"></script>
+</body>
+</html>
