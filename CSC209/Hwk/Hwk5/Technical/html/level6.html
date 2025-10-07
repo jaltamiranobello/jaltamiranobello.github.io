@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HWK5: Technical, Level 6</title>
+<link rel="stylesheet" href="../css/level1.css">
+<script>
+// format [color, circle X-coordinate, circle Y-coordinate, direction, end of line X-coordinate, end of line Y-coordinate, speed]
+    const POINTS = [
+        ["#8FB381", 0, 0, "none", 0, 0, "none"],
+        ["#F7F2A3", 0, 0, "none", 0, 0, "none"],
+        ["#D47F97", 0, 0, "none", 0, 0, "none"],
+        ["#5884C4", 0, 0, "none", 0, 0, "none"],
+        ["#A797E6", 0, 0, "none", 0, 0, "none"]
+        ];
+    const NRPTS = POINTS.length;
+    const DIR = ["up", "down", "left", "right", "diagUpRight", "diagUpLeft", "diagDownRight", "diagDownLeft"];
+    const SPEED = ["slow", "medium", "fast"];
+    const NRSTEPS = 75;
+    let currStep;
+    let intervalID;
+</script>
+<script src="../js/level6.js"></script>
+</head>
+<body style="background-color:antiquewhite"></body>
+<h1 style="text-align:center;background-color:cornflowerblue;color:antiquewhite">Level 6</h1>
+<a href="../technical.html">Back to Technical</a><br><br>
+<input type="button" onclick="assignPoints()" value="Generate Points">
+<input type="button" onclick="startAnimation()" value="Animate"><br><br>
+<canvas id="canvas" width="500" height="500"></canvas>
+</body>
+</html>

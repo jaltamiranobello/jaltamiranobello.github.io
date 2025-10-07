@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HWK5: Technical, Level 4</title>
+<link rel="stylesheet" href="../css/level1.css">
+<script>
+// format [color, circle X-coordinate, circle Y-coordinate, direction, end of line X-coordinate, end of line Y-coordinate]
+    const POINTS = [
+        ["#8FB381", 0, 0, "none", 0, 0],
+        ["#F7F2A3", 0, 0, "none", 0, 0],
+        ["#D47F97", 0, 0, "none", 0, 0],
+        ["#5884C4", 0, 0, "none", 0, 0],
+        ["#A797E6", 0, 0, "none", 0, 0]
+        ];
+    const NRPTS = POINTS.length;
+    const DIR = ["up", "down", "left", "right", "diagUpRight", "diagUpLeft", "diagDownRight", "diagDownLeft"];
+    const SPEED = ["slow", "medium", "fast"];
+</script>
+<script src="../js/level4.js"></script>
+</head>
+<body style="background-color:antiquewhite"></body>
+<h1 style="text-align:center;background-color:cornflowerblue;color:antiquewhite">Level 4</h1>
+<a href="../technical.html">Back to Technical</a><br><br>
+<input type="button" onclick="assignPoints()" value="Generate Points"><br><br>
+<canvas id="canvas" width="500" height="500"></canvas>
+</body>
+</html>
