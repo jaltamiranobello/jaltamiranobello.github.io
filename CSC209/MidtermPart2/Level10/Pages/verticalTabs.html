@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--ASSUMPTIONS:
+    I should not start the vertical tabs by incorporating the "document.getElementById("defaultOpen").click();" in
+    script. Instead, I should make the elements of tabcontent class display style set to none and then update per click.
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/verticalTabs.css">
+  <script src="../js/verticalTabs.js"></script>
+  <script>
+    NRTABS = 7;
+    DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    CONTENT = ["On Monday, I go to work at the Northampton Parents Center.",
+      "On Tuesday, I have three classes.",
+      "On Wednesday, I go to work at the Northampton Parents Center.",
+      "On Thursday, I have three classes.",
+      "On Friday, I do homework and hang out with friends.",
+      "On Saturday, I do homework and hang out with friends.",
+      "On Sunday, I do my homework and my laundry."]
+  </script>
+</head>
+<body>
+    <a href="navBar.html">Return to Navigation Bar</a><br><br>
+  <h2>Level 10: Vertical Tabs</h2>
+  <script>
+    createTabs();
+  </script>
+</body>
+</html> 

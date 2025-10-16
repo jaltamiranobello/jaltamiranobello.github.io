@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <h1>Arrays, Declaring Objects, Accessing Properties, Operators, and Data Types</h1>
+    <h2 id="name">FirstName + LastName</h1>
+    <p id="age">Age Information</p>
+    <p id="color">Favorite Color</p>
+    <button type="button" onclick="info()">Fill Out Information</button>
+    <br>
+    <h2>Output from document.write:</h2>
+    <script>
+        const person = {firstName:"Fernada", lastName:"Altamirano"}
+        person.age = "20";
+        const colors = ["red", "blue", "yellow"];
+        document.write("The variable colors is an " + typeof colors + ". The elements inside colors are " + typeof colors[0] + "s.");
+        colors.push("white");
+        function info(){
+            document.getElementById("name").innerText = person.firstName + " " + person.lastName;
+            document.getElementById("age").innerText = "In " + person.age + " years I will be " + person.age * 2 + " years old.";
+            document.getElementById("color").innerText = "My favorite color is baby blue which is a mixture of " + colors[1] + " and " + colors[3] + ".";
+        }
+    </script>
+</body>
+</html>

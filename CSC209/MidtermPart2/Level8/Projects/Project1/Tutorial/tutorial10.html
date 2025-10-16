@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- JavaScript Function "<table> <tr><th><td>cars[1]</td></th></tr></table>"-->
+<html>
+<head>
+</head>
+<body>
+<h1>Funtion Description:</h1>
+<p> This example uses a button to call a function that changes the paragraph element by concatenating regular text
+    with elements in an array.
+</p>
+<h1>Funtion In Action:</h1>
+
+<p id="year">I am a Freshman.</p>
+<button type="button" onclick="changeText()">Truth Button!</button>
+</body>
+<script>
+    function changeText(){
+        const years = ["Senior", "Junior", "Sophmore", "Freshman"];
+        let actualYear = years[0]
+        let fakeYear = years[3]
+        document.getElementById("year").innerText= "I am not a " + fakeYear + ". I am a " + actualYear;
+    }
+</script>
+
+</html>

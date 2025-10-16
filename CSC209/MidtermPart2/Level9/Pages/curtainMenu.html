@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/curtainMenu.css">
+  <script>
+    let NRPROJECTS = 5;
+    let LINKS = ['https://jaltamiranobello.github.io/CSC209/startPage.html',
+                '../Projects/Project1/hwk2.html',
+                '../Projects/Project2/hwk3.html',
+                'https://jaltamiranobello.github.io/CSC209/Week/Week3/Lab5/SlideShow/slideShow.html',
+                'https://acamerosmith.github.io/CSC209/'];
+    let TEXTS = ['My Github Entry Page', 'Project 1', 'Project 2', 'SlideShow Example', 'Class Github'];
+  </script>
+  <script src="../js/curtainMenu.js"></script>
+  <!-- Assumptions: 
+    I am assuming the div container also needs to be dynamically created in order to add the links.
+    Also assuming I can place x instead of the html entity for the multiplication sign in the exit button since it
+    is a dynamically created text node.
+  -->
+</head>
+<body>
+  <a href="navBar.html">Return to NavBar</a>
+  <h2>Level 9: Curtain menu</h2>
+  <span style="font-size:30px;cursor:pointer" onclick="toggleMenu()">&#9776; open</span>
+  <script>
+    addLinks();
+  </script>
+</body>
+</html>

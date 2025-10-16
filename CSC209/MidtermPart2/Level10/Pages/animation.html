@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HWK5: Animation</title>
+    <link rel="stylesheet" href="../css/animation.css">
+    <script>
+        let points = [];
+        let ogPoints = [];
+        let trace = [];
+        const DIR = ["up", "down", "left", "right", "diagUpRight", "diagUpLeft", "diagDownRight", "diagDownLeft"];
+        const SPEED = ["slow", "medium", "fast"];
+        const COLORS = ["F52727", "#F58427", "#F5DA27", "#BEF527", "#22852D",
+                        "#227B85", "#1FCADE", "#233B82", "#B9A6E3", "#591D82",
+                        "#DEA6E3", "#E0288D", "#E68ABD", "#750B0B", "#F7F29E",
+                        "#9EF7D0", "#356E55", "#4C615D", "#ED7E05", "#9E5D5D"];
+        const NRSTEPS = 75;
+        let currStep;
+        let intervalID;
+    </script>
+    <script src="../js/animation.js"></script>
+</head>
+<body>
+    <h1>HWK5: Animation</h1>
+    <a href="navBar.html">Return to Navigation Bar</a><br><br>
+    <label for="nPoints">Select Number of Points (recommended between 1 and 20):</label>
+    <input type="number" id="nPoints" min = 1 value = "10">
+    <input type="button" onclick="assignPoints()" value="Generate Points"><br><br>
+    <label for="optTrace">Keep Trace:</label>
+    <input type="checkbox" id="optTrace">
+    <input type="button" onclick="startAnimation()" value="Animate"> <br><br>
+    <input type="button" onclick="resetPoints()" value="Reset"><br><br>
+    <canvas id="canvas" width="900" height="500"></canvas>
+</body>
+</html>

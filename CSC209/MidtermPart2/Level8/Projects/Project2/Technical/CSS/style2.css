@@ -1,0 +1,73 @@
+body{
+    background-color:black;
+    color:white;
+    margin:0px;
+}
+
+.outer-page{
+    display:flex;
+    flex-direction: row;
+}
+
+.rightSide{
+    width:100%;
+}
+hr{
+    width:90%;
+}
+
+header{
+    text-align: center;
+    padding:20px
+}
+
+section{
+    text-align:center;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    width:15%;
+}
+
+nav ul{
+    list-style-type: none;
+    padding:10px;
+}
+
+a{
+    color:white;
+}
+
+table{
+    width:90%;
+    margin-left:5%;
+}
+
+table, th, td{
+    border:1px solid white;
+    border-collapse: collapse;
+    padding:20px;
+    text-align:center;
+}
+
+th{
+    background-color:yellow;
+    color:black;
+    border-color:black;
+}
+
+pre{
+    font-family: 'Times New Roman';
+}
+
+button{
+    margin:10px;
+}
+
+#creditList{
+    display: none;
+    list-style-type: none;
+    text-align:center;
+}

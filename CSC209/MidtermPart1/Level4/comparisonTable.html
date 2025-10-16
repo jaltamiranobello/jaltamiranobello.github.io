@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Midterm Part 1: Level 4</title>
+  <!--
+    This link tag creates a relationship between this HTML file and a relative file path to an external CSS file within
+    the font-awesome folder. It provides the icons for the checkmarks and the crosses. The parts of this document that
+    uses the linked file are the class attribute values inside the <i> elements, as it specifies which icon to display.
+  -->
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/comparisonTable.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    const ROW = 
+      "<tr><td>Sample text</td><td><i class='CHECKCROSS1'></i></td><td><i class='CHECKCROSS2'></i></td></tr>";
+  </script>
+</head>
+<body>
+  <a href="../midtermPt1.html">Return To Levels</a>
+  <h2>Comparison Table</h2>
+  <table id="compTable">
+    <tr>
+      <th style="width:50%">Name</th>
+      <th>Part 1</th>
+      <th>Part 2</th>
+    </tr>
+    <tr>
+      <td>Sample text</td>
+      <td><i class="fa fa-remove"></i></td>
+      <td><i class="fa fa-check"></i></td>
+    </tr>
+  </table>
+  <script>
+    function addRow(optPt1, optPt2){
+      let newRow = "";
+      newRow += ROW.replace("CHECKCROSS1", optPt1);
+      newRow = newRow.replace("CHECKCROSS2", optPt2);
+      let table = document.getElementById("compTable");
+      table.innerHTML += newRow;
+    }
+    addRow("fa fa-check", "fa fa-remove");
+  </script>
+</body>
+</html>

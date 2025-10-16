@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>String Concatenation, Assigning Variables, Comments, and Functions</h1>
+    <p id="demo">Name Info</p>
+    <p id="ageInfo">Age Info</p>
+    <button type="button" onclick="info()">Information</button>
+    <script>
+        // This is a one-line comment
+
+        /* This is a
+        multiline
+        comment! */
+
+        function info(){
+            let x = "Fernanda"; let y = "senior"; const age = 20;
+            document.getElementById("demo").innerText= "My name is " + x + ". I am a " + y + "!";
+            document.getElementById("ageInfo").innerText = "I will be " + age*2  + " in 20 years.";
+        }
+    </script>
+</body>
+</html>

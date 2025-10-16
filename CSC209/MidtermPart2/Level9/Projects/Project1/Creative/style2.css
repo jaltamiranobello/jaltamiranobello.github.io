@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(170, 223, 159);
+    display: flex;
+    flex-direction: row;
+    font-family:copperplate;
+}
+#style {
+    font-family:copperplate;
+    background-color: rgb(170, 223, 159);
+    color: rgb(13, 67, 8);
+    width:10%;
+}
+
+#read{
+    font-family:copperplate;
+    background-color: rgb(13, 67, 8);
+    color:rgb(170, 223, 159);
+    width:10%;
+}
+
+#hidden{
+    font-family:copperplate;
+    background-color: rgb(13, 67, 8); 
+    color:rgb(170, 223, 159);
+    width:10%;
+}
+
+.nav{
+    border-right: 1px solid  rgb(13, 67, 8);
+    flex:15%;
+}
+
+.nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav ul a{
+    text-decoration: none;
+    display:block;
+    padding:15px 35px;
+    background-color:rgb(111, 178, 97);
+ 
+}
+
+.nav ul a:hover{
+    background-color: rgb(13, 67, 8);
+    color:  rgb(170, 223, 159);
+}
+
+table{
+    margin-left: auto;
+    margin-right:auto;
+}
+
+table, th, td{
+    border:1px solid black;
+    border-collapse: collapse;
+    padding:20px;
+    text-align:center;
+}
+
+th{
+    background-color: rgb(111, 178, 97);
+    color:  rgb(13, 67, 8);
+}
+
+.right-content{
+    display:flex;
+    flex-direction: column;
+    flex:85%;
+}
+
+img{
+    width: 95%;
+    height: 150px;
+    margin:2.5%;
+}
+
+.right-content-top{
+    background-color: rgb(13, 67, 8);
+    color: white;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+}
+
+.right-content-bottom{
+    text-align:center;
+}
+
+a{
+    color:black;
+}

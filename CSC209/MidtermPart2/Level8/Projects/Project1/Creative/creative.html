@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style-option" rel="stylesheet" href="original.css">
+    <title>About: The Marias</title>
+</head>
+<body>
+    <div class="nav">
+    <!-- Navigation Bar-->
+        <ul>
+            <li><a href="https://www.instagram.com/themarias?igsh=MW16bjBucXkwMG00bA==" target="_blank">Instagram</a></li>
+            <li><a href="https://www.themarias.us/shows" target="_blank">Shows</a></li>
+            <li><a href="https://shop.themarias.us/" target="_blank">Shop</a></li>
+
+        </ul>
+        <hr>
+        <ul>
+            <li><a href="https://globalmusicrights.com/artist/1423781" target="_blank">Maria Zardoya</a></li>
+            <li><a href="https://globalmusicrights.com/artist/1423783" target="_blank">Josh Conway</a></li>
+            <li><a href="https://www.discogs.com/artist/8112978-Jesse-Perlman?noanv=1" target="_blank">Jesse Perlman</a></li>
+            <li><a href="https://equipboard.com/pros/edward-james" target="_blank">Edward James</a></li>
+        </ul>
+        <hr>
+        <ul>
+            <li><a href="genres.html" target="_blank">Genres</a></li>
+            <li><a href="languages.html" target="_blank">Languages</a></li>
+        </ul>
+
+
+    </div>
+    <div class="right-content">
+        <div class="right-content-top">
+        <!-- Header-->
+            <img src="Images/pexels-conojeghuo-175773.jpg" alt="Ocean Water">
+            <h1>The Marias</h1>
+            <button id="style" type="button" onclick="changeStyle()">Toggle</button>
+            <script>
+                function changeStyle(){
+                    if (document.getElementById("style-option").getAttribute('href') == "original.css"){
+                        document.getElementById("style-option").href = "style2.css";
+                    }
+                    else{
+                        document.getElementById("style-option").href = "original.css";
+                    }
+                }
+            </script>
+        </div>
+        <div class="right-content-bottom">
+            <!--Content-->
+            <h2>Songs</h2>
+            <button id="read" type="button" onclick="secretText()">Read Me</button>
+            <p id="secret1"></p>
+            <p id="secret2"></p>
+            <script>
+                function hide(){
+                    document.getElementById("secret1").innerText = "";
+                    document.getElementById("secret2").innerText = "";
+                    document.getElementById("hidden").innerText = "Read Me";
+                    document.getElementById("hidden").onclick = secretText;
+                    document.getElementById("hidden").id = "read";
+                }
+                function secretText(){
+                    document.getElementById("secret1").innerText = "The Marias is a pop band group with four members and they are named after their lead singer Maria.";
+                    document.getElementById("secret2").innerText = "They have collaborated with other artists such as Bad Bunny and Young Miko.";
+                    document.getElementById("read").innerText = "Hide Me";
+                    document.getElementById("read").onclick = hide;
+                    document.getElementById("read").id = "hidden"
+                }
+                
+            </script>
+            <table>
+                <tr>
+                    <th>Artist</th>
+                    <th>Song Name</th>
+                    <th>Album</th>
+                    <th>Length</th>
+                    <th>Featured Artist</th>
+                    <th>Year</th> 
+                </tr>
+                <tr>
+                    <td>The Marias</td>
+                    <td>Nobody New</td>
+                    <td>Single</td>
+                    <td>3:33m</td>
+                    <td>None</td>
+                    <td>2025</td>
+                </tr>
+                <tr>
+                    <td>The Marias</td>
+                    <td>Basta Ya</td>
+                    <td><a href="superclean.html" target="_blank">Super Clean Vol.I</a></td>
+                    <td>2:56m</td>
+                    <td>None</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>The Marias</td>
+                    <td>Only In My Dreams</td>
+                    <td><a href="superclean.html" target="_blank">Super Clean Vol.I</a></td>
+                    <td>2:50m</td>
+                    <td>None</td>
+                    <td>2017</td>
+                </tr>
+                <tr>
+                    <td>Tainy</td>
+                    <td>Manana</td>
+                    <td>DATA</td>
+                    <td>2:55m</td>
+                    <td><a href="youngMiko.html" target="_blank">Young Miko</a>, The Marias</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>The Marias</td>
+                    <td><a href="sienna.html" target="_blank">Sienna</a></td>
+                    <td>Submarine</td>
+                    <td>3:44m</td>
+                    <td>None</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>Bad Bunny</td>
+                    <td>Otro Atardecer</td>
+                    <td><a href="unVeranoSinTi.html" target="_blank">Un Verano Sin Ti</a></td>
+                    <td>4:04m</td>
+                    <td>The Marias</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>The Marias</td>
+                    <td>Lejos De Ti</td>
+                    <td>Submarine</td>
+                    <td>2:59m</td>
+                    <td>None</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>The Marias</td>
+                    <td><a href="heavy.html" target="_blank">Heavy</a></td>
+                    <td>Cinema</td>
+                    <td>4:13m</td>
+                    <td>None</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>The Marias</td>
+                    <td>Carino</td>
+                    <td>Superclean, Vol.II</td>
+                    <td>4:18m</td>
+                    <td>None</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>The Marias</td>
+                    <td>Hush</td>
+                    <td>Cinema</td>
+                    <td>3:01m</td>
+                    <td>None</td>
+                    <td>2021</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

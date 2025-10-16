@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <h1>Comparison Operators</h1>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        let x = "Hello";
+        let y = "Hello";
+        let a = "5";
+        let b = 5;
+        document.getElementById("demo1").innerHTML = "Is 'Hello' equal to 'Hello': " + (x == y);
+        document.getElementById("demo2").innerHTML = "Is '5' equal to 5: " + (a == b);
+        document.getElementById("demo3").innerHTML = "Is '5' equal to 5 and the same data type: " + (a === b);
+        document.getElementById("demo4").innerHTML = "Is '5' not equal to 'Hello': " + (a !== y);
+    </script>
+</body>
+</html>

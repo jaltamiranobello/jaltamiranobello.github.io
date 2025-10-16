@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- JavaScript Example-->
+<html>
+<body>
+
+<h1>Alternate Styling</h1>
+<button type="button" onclick="updateStyling()">Change Styling</button>
+<div id="section1">
+    <h2 id="title1">Name:</h2>
+    <p id="name">My name is Fernanda Altamirano.</p>
+</div>
+
+<br>
+<div id="section2">
+    <h2 id="title2">Age:</h2>
+    <p id="age">I am 20yrs old.</p>
+</div>
+
+<script>
+function updateStyling() {
+    document.getElementById("section1").style.backgroundColor = "blue";
+    document.getElementById("section1").style.border = "3px solid pink"
+    document.getElementById("section2").style.backgroundColor = "pink";
+    document.getElementById("section2").style.border = "3px solid blue"
+    document.getElementById("title1").style.textAlign = "center";
+    document.getElementById("title1").style.color = "pink";
+    document.getElementById("title2").style.textAlign = "center";
+    document.getElementById("title2").style.color = "blue";
+    document.getElementById("name").style.fontFamily = "arial";
+    document.getElementById("name").style.color = "pink";
+    document.getElementById("age").style.fontFamily = "arial";
+    document.getElementById("age").style.color = "blue";
+}
+</script>
+<noscript>JavaScript not supported, sorry.</noscript>
+
+
+</body>
+</html>

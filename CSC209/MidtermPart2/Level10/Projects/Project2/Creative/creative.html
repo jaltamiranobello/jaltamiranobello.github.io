@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style-option" rel="stylesheet" href="CSS/style1.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Recipes</h1>
+        <button type="button" onclick="flipStyle()">Flip Color Scheme</button>
+        <button type="button" onclick="changeMenu()">Change Menu Layout</button>
+    </div>
+    <div class="menu">
+        <ul id="menuLinks">
+            <li class="menuItem"><a href="https://www.simplyrecipes.com/mexican-recipes-11734554" target="_blank">Mexican</a></li>
+            <li class="menuItem"><a href="https://www.simpleitaliancooking.com/" target="_blank">Italian</a></li>
+            <li class="menuItem"><a href="https://thewoksoflife.com/" target="_blank">Chinese</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="left">
+            <h1>Vodka Pasta</h1>
+            <img src="Images/claudio-schwarz-HNsmFqVf2Zo-unsplash.jpg" width="100%">
+            <!-- Add recipe ingredients -->
+            <hr id="line1">
+            <button id="showReviews" type="button" onclick="showRatings()">View Reviews</button>
+            <ul id="ratings">
+                <li>Judith: 4.5/5 &#127775;</li>
+                <li>Karen: 4/5 &#127775;</li>
+                <li>Elssie: 3.8/5 &#127775;</li>
+                <li>Edward: 4.2/5 &#127775;</li>
+                <li>Justin: 2.7/5 &#127775;</li>
+            </ul>
+            <hr id="line2">
+            <ul id ="ingredients">
+                <li>Any Pasta (best with penne pasta)</li>
+                <li>Vodka</li>
+                <li>Tomato Paste</li>
+                <li>Heavy Cream</li>
+                <li>Butter</li>
+                <li>Garlic Powder</li>
+                <li>Onion Powder</li>
+                <li>Oregano</li>
+                <li>Basil Leaves</li>
+                <li>Pepper</li>
+                <li>Salt</li>
+                <li>Cayenne Pepper</li>
+                <li>Italian Seasoning</li>
+            </ul>
+        </div>
+        <div class="right">
+            <h2>Instructions:</h2>
+            <!-- Add recipe instrucitons -->
+            <button id="showInstru" type="button" onclick ="showInstructions()">Hide Instructions</button>
+            <pre id="instructions">
+                1. Boil pasta of choice until soft
+                <button id='showImage1' type="button" onclick="showImages()">Show Image</button>
+                <img id="photo2" src="Images/michal-balog-V5WDW9gvyCo-unsplash.jpg" width="20%">
+                2. Drain pasta, and put to side
+                3. In a pan add butter and tomato paste
+                4. Add pepper
+                5. Add salt
+                6. Add cayene pepper if you would like
+                7. Add oregano and italian seasoning
+                8. Add garlic and onion powder
+                9. Add heavy cream and basil leaves and stir until creamy
+                10. Add vodka and stir for 5min in low heat
+                11. Finally, add pasta and stir until evenly coated
+            </pre>
+        </div>
+
+    </div>
+    <script src="JS/myButtons.js"></script>
+</body>
+</html>
