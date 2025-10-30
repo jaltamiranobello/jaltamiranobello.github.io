@@ -1,0 +1,45 @@
+body{
+    background-color: antiquewhite;
+}
+p{
+    text-align:center;
+}
+
+h1{
+    text-align:center;
+    background-color:cornflowerblue;
+    color:antiquewhite  
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+}
+
+th{
+    width: 33%
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: antiquewhite;
+}
+
+th:hover{
+    background-color: rgb(41, 62, 100);
+}
+
+th, td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align:center
+}
