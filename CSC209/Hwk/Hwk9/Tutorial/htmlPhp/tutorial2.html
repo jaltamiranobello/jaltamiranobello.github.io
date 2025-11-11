@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<a href="../tutorial.html">Return To Tutorials</a>
+<div id="demo">
+<h2>Adding Text From a File With AJAX</h2>
+<button type="button" onclick="loadText()">Add Text</button>
+</div>
+<script>
+function loadText() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    let par = document.createElement('p');
+    let text = document.createTextNode(this.responseText);
+    par.appendChild(text);
+    document.body.appendChild(par);
+  }
+  xhttp.open("GET", "../txt/myfile.txt");
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
