@@ -1,0 +1,62 @@
+body{
+    background-color: antiquewhite;
+}
+
+h1{
+    text-align:center;
+    background-color:cornflowerblue;
+    color:antiquewhite  
+}
+
+#login-failed{
+    color:navy;
+    font-size: large;
+}
+
+#login-form{
+    background-color: cornflowerblue;
+    color: antiquewhite;
+    border: 3px solid navy;
+    padding: 1%;
+    width: max-content;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.login-input{
+    font-size: large;
+}
+
+#login-submit{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+    color: navy;
+    border: 1px solid navy;
+}
+
+#login-submit:hover{
+    background-color: navy;
+    color: antiquewhite;
+    border: 1px solid navy;
+}
+
+.error-message-box{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 1%;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    border: solid 3px navy;
+    text-align: center;
+}
+
+.close-button{
+  float: right;
+  background-color: navy;
+  color: white;
+}

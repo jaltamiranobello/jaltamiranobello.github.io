@@ -1,0 +1,111 @@
+body{
+    background-color: antiquewhite;
+}
+p{
+    text-align:center;
+}
+
+h1{
+    text-align:center;
+    background-color:cornflowerblue;
+    color:antiquewhite  
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    margin-bottom: 1%;
+}
+
+th{
+    width: 16.5%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: antiquewhite;
+}
+
+th:hover{
+    background-color: rgb(41, 62, 100);
+}
+
+th, td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align:center
+}
+
+#logout-button{
+  float:right;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: navy;
+  color: antiquewhite;
+  border: 1px solid navy;
+}
+
+#logout-button:hover{
+  background-color: antiquewhite;
+  color: navy;
+  border: 1px solid navy;
+}
+
+#refresh-button{
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: navy;
+  color: antiquewhite;
+  border: 1px solid navy;
+}
+
+#refresh-button:hover{
+  background-color: antiquewhite;
+  color: navy;
+  border: 1px solid navy;
+}
+
+#edit-form{
+    background-color: cornflowerblue;
+    color: antiquewhite;
+    border: 3px solid navy;
+    padding: 1%;
+    width: 50%;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.edit-input{
+    font-size: large;
+}
+
+#edit-submit{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+    color: navy;
+    border: 1px solid navy;
+}
+
+#edit-submit:hover{
+    background-color: navy;
+    color: antiquewhite;
+    border: 1px solid navy;
+}
+
+.close-button{
+  float: right;
+  background-color: navy;
+  color: white;
+}
